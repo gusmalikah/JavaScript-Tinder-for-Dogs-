@@ -17,10 +17,9 @@ header {
     padding: 2rem 1rem 0rem 1rem;
     height: 5vh;
 }
-main {
+.teddy, .rex, .bella{
     margin-top: 20px;
     border-radius: 15px;
-    background-image: url("images/dog-teddy.jpg");
     background-size: cover;
     background-position: center;
     height: 72vh;
@@ -28,24 +27,21 @@ main {
     flex-direction: column;
     justify-content: flex-end;
 }
-.like-badge {
+.teddy {
+    background-image: url("./images/dog-teddy.jpg");
+}
+.rex {
+     background-image: url("./images/dog-rex.jpg");
+}
+.bella {
+    background-image: url("./images/dog-bella.jpg");
+}
+#badge, #nope-badge {
     display: none;
     width: 40%;
     margin: 0px 0px 100px 30px;
     transform: rotate(-30deg);
 }
-.nope-badge {
-    display: none;
-    width: 40%;
-    margin: 0px 0px 100px 30px;
-    transform: rotate(-30deg);
-}
-/* .like-show {
-    display: inline-block;
-}
-.nope-show {
-    display: inline-block;
-} */
 
 h1 {
     font-weight: 600;
@@ -76,7 +72,7 @@ button{
     width: 25px;
     padding: 10px;
 }
-.cross:hover{
+#cross:hover{
     background: #FFE7EF;
     box-shadow: 0px 10px 20px #EDD9DF;
 }
